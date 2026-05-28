@@ -45,6 +45,11 @@ st.markdown("""
         70% { box-shadow: 0 0 0 20px rgba(255, 75, 75, 0); }
         100% { box-shadow: 0 0 0 0 rgba(255, 75, 75, 0); }
     }
+    
+    /* Hide the Streamlit 'running' animation in the top right */
+    [data-testid="stStatusWidget"] {
+        visibility: hidden;
+    }
     </style>
 """, unsafe_allow_html=True)
 
